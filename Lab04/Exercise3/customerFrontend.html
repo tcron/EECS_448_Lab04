@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Web Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="formChecker.js"></script>
+</head>
+<body>
+    <h1 class="content">Store</h1>
+    <form id="myForm" action="customerBackend.php" method="post" class="content">
+        <p>E-mail:
+        <input type="email" id="email" name="email" class="content"> </p>
+        <p>Password: 
+        <input type="password" id="password" name="password"> </p> <br />
+        <p>Products:</p>
+        <p>Baseball      $3.00     Quantity: <input type="number" id="baseballQuantity" name="baseballQuantity" min="0" value="0"> </p>
+        <p>Football      $5.00     Quantity: <input type="number" id="footballQuantity" name="footballQuantity" min="0" value="0"> </p>
+        <p>Basketball    $7.00     Quantity: <input type="number" id="basketballQuantity" name="basketballQuantity" min="0" value="0"> </p>
+        <br />
+        <p>Shipping Options:</p>
+        <br />
+        <input type="radio" value="7Day" name="shipping" checked="checked"> Free 7 Day
+        <br />
+        <input type="radio" value="3Day" name="shipping"> $5.00 3 Day
+        <br />
+        <input type="radio" value="Overnight" name="shipping"> $50.00 Overnight
+        <br />
+        <br />
+        <input type="button" onclick="validate()" value="Submit">
+        <input type="reset" onclick="reset()">
+
+        <div id="content"></div>
+    </form>
+</body>
+</html>

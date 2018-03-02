@@ -1,0 +1,17 @@
+﻿body
+{
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1600/2560x1600-light-gray-solid-color-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    color: black;
+    font-family: Georgia;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
